@@ -96,7 +96,9 @@ UnixLogMonitoringTool/
 
 ### 2. Running the Scripts
 
-**🔹 For Windows Users (Primary)**
+> **Please select your Operating System below for exact instructions:**
+
+### 🪟 Windows (Primary Setup)
 You must use **Git Bash** to run these shell scripts. Open your project in Git Bash, or open the terminal in VS Code and change the default profile to "Git Bash".
 
 Navigate to the scripts directory:
@@ -127,7 +129,7 @@ bash monitor.sh
 
 ---
 
-**🔹 For macOS Users**
+### 🍎 macOS
 On a Mac, you can run the scripts natively using the built-in Terminal. First, navigate to the scripts folder and give them executable permissions:
 ```bash
 cd scripts/
@@ -146,7 +148,7 @@ Execute the scripts directly:
 
 ---
 
-**🔹 For Linux Users**
+### 🐧 Linux
 On any Linux distribution (Ubuntu, CentOS, etc.), you can also run the scripts natively. Navigate to the scripts directory and apply execution permissions:
 ```bash
 cd scripts/
