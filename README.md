@@ -96,7 +96,7 @@ UnixLogMonitoringTool/
 
 ### 2. Running the Scripts
 
-**For Windows Users:**
+**🔹 For Windows Users (Primary)**
 You must use **Git Bash** to run these shell scripts. Open your project in Git Bash, or open the terminal in VS Code and change the default profile to "Git Bash".
 
 Navigate to the scripts directory:
@@ -104,28 +104,64 @@ Navigate to the scripts directory:
 cd scripts/
 ```
 
-**Run Real-time Monitor:**
+Execute the scripts using the `bash` command:
 ```bash
+# 1. Generate dummy logs for testing (Run this first!)
+bash generate_mock_logs.sh
+
+# 2. Run Anomaly Detection
+bash anomaly_detector.sh
+
+# 3. Generate Daily Report
+bash report_generator.sh
+
+# 4. Generate SQL Inserts
+bash database_loader.sh
+
+# 5. Archive Old Logs (Simulates Logrotate)
+bash archive_logs.sh
+
+# 6. Run Real-time Monitor (Ctrl+C to stop)
 bash monitor.sh
 ```
 
-**Run Anomaly Detection:**
+---
+
+**🔹 For macOS Users**
+On a Mac, you can run the scripts natively using the built-in Terminal. First, navigate to the scripts folder and give them executable permissions:
 ```bash
-bash anomaly_detector.sh
+cd scripts/
+chmod +x *.sh
 ```
 
-**Generate Daily Report:**
+Execute the scripts directly:
 ```bash
-bash report_generator.sh
+./generate_mock_logs.sh   # Generate dummy logs for testing
+./anomaly_detector.sh     # Run anomaly analysis
+./report_generator.sh     # Generate daily report
+./database_loader.sh      # Generate SQL inserts
+./archive_logs.sh         # Compress old logs
+./monitor.sh              # Start real-time monitoring
 ```
 
-**Generate SQL Inserts:**
+---
+
+**🔹 For Linux Users**
+On any Linux distribution (Ubuntu, CentOS, etc.), you can also run the scripts natively. Navigate to the scripts directory and apply execution permissions:
 ```bash
-bash database_loader.sh
+cd scripts/
+chmod +x *.sh
 ```
 
-*(Note for Linux/Mac users: You can run them directly using `./monitor.sh` after making them executable with `chmod +x *.sh`)*
-
+Execute the scripts directly:
+```bash
+./generate_mock_logs.sh   # Generate dummy logs for testing
+./anomaly_detector.sh     # Run anomaly analysis
+./report_generator.sh     # Generate daily report
+./database_loader.sh      # Generate SQL inserts
+./archive_logs.sh         # Compress old logs
+./monitor.sh              # Start real-time monitoring
+```
 ### 3. Database Integration
 1. Review `sql/schema.sql` and run it against your local database to create the schema.
 2. Run `./database_loader.sh` to generate SQL inserts inside `sql/load_data.sql`.
