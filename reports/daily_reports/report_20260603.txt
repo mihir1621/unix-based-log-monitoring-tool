@@ -1,0 +1,28 @@
+=========================================================
+          UNIX-BASED LOG MONITORING DAILY REPORT         
+=========================================================
+Report Date : Wed Jun  3 00:32:49 IST 2026
+---------------------------------------------------------
+TOTAL LOG ENTRIES : 41
+INFO MESSAGES     : 17
+WARNING MESSAGES  : 5
+ERROR MESSAGES    : 14
+CRITICAL ISSUES   : 2
+FAILED TRANSACTIONS: 3
+---------------------------------------------------------
+TOP RECURRING ERRORS:
+      3 NullPointerException in UserService.java:145
+      2 Deadlock found when trying to get lock; try restarting transaction
+      1 Payment gateway timeout for TXN-1006.
+      1 Payment gateway timeout for TXN-1002.
+      1 Missing transaction record for ID TXN-1004 during reconciliation.
+---------------------------------------------------------
+SYSTEM HEALTH SUMMARY:
+Status: POOR - System is experiencing a high volume of errors and critical issues.
+---------------------------------------------------------
+ROOT CAUSE ANALYSIS (RCA) SUGGESTIONS:
+- DATABASE OUTAGE DETECTED: Check primary DB instance health, network connectivity, and connection pool limits.
+- APPLICATION CRASH DETECTED: Java OutOfMemoryError found. Investigate memory leaks or increase JVM heap size.
+- PAYMENT GATEWAY TIMEOUTS: Verify external API vendor status and check firewall/proxy rules.
+- MISSING RECORDS: Discrepancy in transaction reconciliation. Audit the message queue or DB transaction commits.
+=========================================================

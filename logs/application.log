@@ -1,0 +1,16 @@
+2026-06-02 08:15:01 [INFO] AppServer started successfully on port 8080.
+2026-06-02 08:22:15 [INFO] User login successful: user_id=1024
+2026-06-02 08:45:10 [WARNING] High memory usage detected: 85%
+2026-06-02 09:12:45 [ERROR] NullPointerException in UserService.java:145
+2026-06-02 09:15:00 [INFO] Scheduled task 'DataCleanup' started.
+2026-06-02 09:15:05 [INFO] Scheduled task 'DataCleanup' finished.
+2026-06-02 10:05:22 [ERROR] Application crashed: OutOfMemoryError
+2026-06-02 10:10:01 [INFO] AppServer restarted successfully on port 8080.
+2026-06-02 10:30:15 [CRITICAL] Failed to load configuration file: /etc/app/config.yml
+2026-06-02 10:35:00 [ERROR] NullPointerException in UserService.java:145
+2026-06-02 11:20:45 [WARNING] API rate limit approaching for endpoint /api/v1/users
+2026-06-02 12:45:12 [ERROR] File not found: /var/data/uploads/image_502.png
+2026-06-02 13:10:00 [INFO] User logout successful: user_id=1024
+2026-06-02 14:05:33 [ERROR] Invalid data format in payload from IP 192.168.1.55
+2026-06-02 15:30:10 [ERROR] NullPointerException in UserService.java:145
+2026-06-02 16:00:05 [WARNING] High memory usage detected: 90%

@@ -1,0 +1,14 @@
+2026-06-02 08:25:10 [INFO] Transaction TXN-1001 initiated. Amount: $50.00
+2026-06-02 08:25:12 [INFO] Transaction TXN-1001 completed successfully.
+2026-06-02 09:12:45 [ERROR] Payment gateway timeout for TXN-1002.
+2026-06-02 09:15:00 [FAILED] Transaction TXN-1002 failed due to gateway timeout.
+2026-06-02 10:20:30 [INFO] Transaction TXN-1003 initiated. Amount: $120.50
+2026-06-02 10:20:31 [INFO] Transaction TXN-1003 completed successfully.
+2026-06-02 11:30:15 [ERROR] Missing transaction record for ID TXN-1004 during reconciliation.
+2026-06-02 12:05:40 [INFO] Transaction TXN-1005 initiated. Amount: $15.00
+2026-06-02 12:05:45 [ERROR] Invalid card details provided for TXN-1005.
+2026-06-02 12:05:45 [FAILED] Transaction TXN-1005 failed.
+2026-06-02 14:10:10 [ERROR] Payment gateway timeout for TXN-1006.
+2026-06-02 14:12:00 [FAILED] Transaction TXN-1006 failed due to gateway timeout.
+2026-06-02 15:45:20 [INFO] Transaction TXN-1007 initiated. Amount: $99.99
+2026-06-02 15:45:22 [INFO] Transaction TXN-1007 completed successfully.

@@ -1,0 +1,11 @@
+2026-06-02 08:15:02 [INFO] Database connection pool initialized. Max connections: 50
+2026-06-02 08:30:10 [INFO] Query executed successfully in 12ms.
+2026-06-02 09:05:15 [ERROR] Database connection lost. Attempting to reconnect...
+2026-06-02 09:05:20 [CRITICAL] Database outage detected on host db-primary-01
+2026-06-02 09:10:15 [INFO] Database reconnected successfully.
+2026-06-02 10:15:00 [WARNING] Slow query detected. Execution time: 5400ms. Query: SELECT * FROM transaction_history
+2026-06-02 11:45:22 [ERROR] Deadlock found when trying to get lock; try restarting transaction
+2026-06-02 12:30:10 [INFO] Query executed successfully in 8ms.
+2026-06-02 14:20:55 [ERROR] Database connection timeout after 30000ms.
+2026-06-02 15:10:05 [WARNING] Connection pool at 95% capacity.
+2026-06-02 16:45:30 [ERROR] Deadlock found when trying to get lock; try restarting transaction

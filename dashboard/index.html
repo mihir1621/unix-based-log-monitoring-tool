@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexLog | Production Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="glass-panel main-header">
+            <div class="logo">
+                <i class="fa-solid fa-satellite-dish"></i> NexLog <span>Pro</span>
+            </div>
+            <div class="status-badge">
+                <div class="pulse-dot"></div>
+                System Active
+            </div>
+        </header>
+
+        <!-- Main Metrics Grid -->
+        <section class="metrics-grid">
+            <div class="metric-card glass-panel info-card" style="--delay: 0.1s">
+                <div class="icon-wrapper"><i class="fa-solid fa-file-lines"></i></div>
+                <div class="metric-content">
+                    <h3>Logs Analyzed</h3>
+                    <p id="totalLogs">0</p>
+                </div>
+            </div>
+            <div class="metric-card glass-panel warning-card" style="--delay: 0.2s">
+                <div class="icon-wrapper"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="metric-content">
+                    <h3>Warnings</h3>
+                    <p id="totalWarnings">0</p>
+                </div>
+            </div>
+            <div class="metric-card glass-panel error-card" style="--delay: 0.3s">
+                <div class="icon-wrapper"><i class="fa-solid fa-bug"></i></div>
+                <div class="metric-content">
+                    <h3>Errors Detected</h3>
+                    <p id="totalErrors">0</p>
+                </div>
+            </div>
+            <div class="metric-card glass-panel critical-card" style="--delay: 0.4s">
+                <div class="icon-wrapper"><i class="fa-solid fa-skull-crossbones"></i></div>
+                <div class="metric-content">
+                    <h3>Critical Outages</h3>
+                    <p id="totalCritical">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Grid -->
+        <section class="charts-section">
+            <div class="chart-container glass-panel" style="--delay: 0.5s">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-chart-line"></i> Incident Timeline</h2>
+                    <span class="time-filter">Last 24 Hours</span>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="chart-container glass-panel" style="--delay: 0.6s">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-chart-pie"></i> Severity Distribution</h2>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="severityChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Incidents List -->
+        <section class="incidents-section glass-panel" style="--delay: 0.7s">
+            <div class="panel-header">
+                <h2><i class="fa-solid fa-microscope"></i> AI Root Cause Analysis (RCA)</h2>
+                <button class="export-btn"><i class="fa-solid fa-download"></i> Export Report</button>
+            </div>
+            <ul id="rcaList" class="incident-list">
+                <!-- Populated by JS -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

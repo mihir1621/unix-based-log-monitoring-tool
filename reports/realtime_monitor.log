@@ -1,0 +1,32 @@
+[31m2026-06-02 10:05:22 [ERROR] Application crashed: OutOfMemoryError[0m
+[31m2026-06-02 10:30:15 [CRITICAL] Failed to load configuration file: /etc/app/config.yml[0m
+[31m2026-06-02 10:35:00 [ERROR] NullPointerException in UserService.java:145[0m
+[31m2026-06-02 12:45:12 [ERROR] File not found: /var/data/uploads/image_502.png[0m
+[31m2026-06-02 14:05:33 [ERROR] Invalid data format in payload from IP 192.168.1.55[0m
+[31m2026-06-02 15:30:10 [ERROR] NullPointerException in UserService.java:145[0m
+[31m2026-06-02 09:05:15 [ERROR] Database connection lost. Attempting to reconnect...[0m
+[31m2026-06-02 09:05:20 [CRITICAL] Database outage detected on host db-primary-01[0m
+[31m2026-06-02 11:45:22 [ERROR] Deadlock found when trying to get lock; try restarting transaction[0m
+[31m2026-06-02 14:20:55 [ERROR] Database connection timeout after 30000ms.[0m
+[31m2026-06-02 16:45:30 [ERROR] Deadlock found when trying to get lock; try restarting transaction[0m
+[31m2026-06-02 11:30:15 [ERROR] Missing transaction record for ID TXN-1004 during reconciliation.[0m
+[31m2026-06-02 12:05:45 [ERROR] Invalid card details provided for TXN-1005.[0m
+[31m2026-06-02 12:05:45 [FAILED] Transaction TXN-1005 failed.[0m
+[31m2026-06-02 14:10:10 [ERROR] Payment gateway timeout for TXN-1006.[0m
+[31m2026-06-02 14:12:00 [FAILED] Transaction TXN-1006 failed due to gateway timeout.[0m
+[31m2026-06-02 10:05:22 [ERROR] Application crashed: OutOfMemoryError[0m
+[31m2026-06-02 10:30:15 [CRITICAL] Failed to load configuration file: /etc/app/config.yml[0m
+[31m2026-06-02 10:35:00 [ERROR] NullPointerException in UserService.java:145[0m
+[31m2026-06-02 12:45:12 [ERROR] File not found: /var/data/uploads/image_502.png[0m
+[31m2026-06-02 14:05:33 [ERROR] Invalid data format in payload from IP 192.168.1.55[0m
+[31m2026-06-02 15:30:10 [ERROR] NullPointerException in UserService.java:145[0m
+[31m2026-06-02 09:05:15 [ERROR] Database connection lost. Attempting to reconnect...[0m
+[31m2026-06-02 09:05:20 [CRITICAL] Database outage detected on host db-primary-01[0m
+[31m2026-06-02 11:45:22 [ERROR] Deadlock found when trying to get lock; try restarting transaction[0m
+[31m2026-06-02 14:20:55 [ERROR] Database connection timeout after 30000ms.[0m
+[31m2026-06-02 16:45:30 [ERROR] Deadlock found when trying to get lock; try restarting transaction[0m
+[31m2026-06-02 11:30:15 [ERROR] Missing transaction record for ID TXN-1004 during reconciliation.[0m
+[31m2026-06-02 12:05:45 [ERROR] Invalid card details provided for TXN-1005.[0m
+[31m2026-06-02 12:05:45 [FAILED] Transaction TXN-1005 failed.[0m
+[31m2026-06-02 14:10:10 [ERROR] Payment gateway timeout for TXN-1006.[0m
+[31m2026-06-02 14:12:00 [FAILED] Transaction TXN-1006 failed due to gateway timeout.[0m
