@@ -173,4 +173,37 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // 4. Export Functionality (Text Only)
+    const exportTxtBtn = document.getElementById('exportTxtBtn');
+
+    exportTxtBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        let reportText = "=========================================================\n";
+        reportText += "          NEXLOG PRO - SYSTEM MONITORING REPORT         \n";
+        reportText += "=========================================================\n";
+        reportText += `Date Generated: ${new Date().toLocaleString()}\n`;
+        reportText += "---------------------------------------------------------\n";
+        reportText += `TOTAL LOGS ANALYZED : ${dashboardData.metrics.totalLogs}\n`;
+        reportText += `WARNINGS            : ${dashboardData.metrics.warnings}\n`;
+        reportText += `ERRORS DETECTED     : ${dashboardData.metrics.errors}\n`;
+        reportText += `CRITICAL OUTAGES    : ${dashboardData.metrics.critical}\n`;
+        reportText += "---------------------------------------------------------\n";
+        reportText += "ROOT CAUSE ANALYSIS (RCA) SUGGESTIONS:\n";
+        
+        dashboardData.rcaSuggestions.forEach(suggestion => {
+            reportText += `- ${suggestion}\n`;
+        });
+        
+        reportText += "=========================================================\n";
+
+        const blob = new Blob([reportText], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'NexLog_Report.txt';
+        a.click();
+        URL.revokeObjectURL(url);
+    });
 });
