@@ -95,31 +95,36 @@ UnixLogMonitoringTool/
 - (Optional) MySQL or PostgreSQL installed locally for the database component.
 
 ### 2. Running the Scripts
-Navigate to the project root and make the scripts executable (if on Linux/Mac):
+
+**For Windows Users:**
+You must use **Git Bash** to run these shell scripts. Open your project in Git Bash, or open the terminal in VS Code and change the default profile to "Git Bash".
+
+Navigate to the scripts directory:
 ```bash
 cd scripts/
-chmod +x *.sh
 ```
 
 **Run Real-time Monitor:**
 ```bash
-./monitor.sh
+bash monitor.sh
 ```
 
 **Run Anomaly Detection:**
 ```bash
-./anomaly_detector.sh
+bash anomaly_detector.sh
 ```
 
 **Generate Daily Report:**
 ```bash
-./report_generator.sh
+bash report_generator.sh
 ```
 
 **Generate SQL Inserts:**
 ```bash
-./database_loader.sh
+bash database_loader.sh
 ```
+
+*(Note for Linux/Mac users: You can run them directly using `./monitor.sh` after making them executable with `chmod +x *.sh`)*
 
 ### 3. Database Integration
 1. Review `sql/schema.sql` and run it against your local database to create the schema.
